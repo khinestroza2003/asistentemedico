@@ -29,7 +29,9 @@ export default function SymptomsSelector({ symptoms: initialSymptoms } = {}) {
   }
 
   return (
-    <div className="symptoms-selector" style={{ textAlign: "left" }}>
+
+
+    <div className="symptoms-selector" style={{ textAlign: "left", borderInline: "2px solid #000000ff", padding: "2rem", borderRadius: "8px" }}>
       <h3>Selecciona los síntomas</h3>
 
       <div className="symptom-list" style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
@@ -55,11 +57,21 @@ export default function SymptomsSelector({ symptoms: initialSymptoms } = {}) {
               <div key={s} className="symptom-chip" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.35rem 0.6rem", background: "#e6f7ff", border: "1px solid #b3e5ff", borderRadius: "999px" }}>
                 <span>{s}</span>
                 <button type="button" aria-label={`Eliminar ${s}`} onClick={() => remove(s)} style={{ background: "transparent", border: "none", cursor: "pointer", fontWeight: "700" }}>×</button>
+                 <br />
               </div>
+
             ))}
+
+            
           </div>
         )}
+        <br />
+        <br />  
+        <div> 
+                <button type= "button" style={{color: "black", borderRadius: "30 px", backgroundColor: "#9dd1efff"}}>Siguiente </button>
+            </div>
       </div>
     </div>
+
   );
 }
