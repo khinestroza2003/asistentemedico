@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Estilos mínimos para el selector de síntomas */
+.symptom-list {
+  gap: 0.5rem;
+}
+
+.selected-list {
+  gap: 0.5rem;
+}
+
+.symptom-chip button {
+  line-height: 1;
+}
